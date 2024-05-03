@@ -1,8 +1,7 @@
 - 👋 Hi, I’m @yodablocks
 - 👀 I’m interested in Macro-Economy, Science & Data !
-- 🌱 I’m currently learning more about ML and AI abilities. 
-- 💞️ I’m looking to collaborate on Data Science / Data Analyst (in Finance & Web3)
-- 📫 How to reach me just write a comment.
+- 🌱 I'm dedicated to continuously learning and improving my knowledge and skills in the areas of artificial intelligence capabilities and cryptocurrency analysis. 
+- 📫 How to reach me just write here: yodablock@proton.me
 
 <!---
 yodablocks/yodablocks is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
