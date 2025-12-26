@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @yodablocks
+- 👋 Hi, I’m @yodablocks 
 - 👀 I’m interested in Macro-Economy, Science & Data !
-- 🌱 I'm dedicated to continuously improve my knowledge in the areas of AI and Web3. 
+- 🌱 I'm dedicated to continuously improve my knowledge in the areas of AI and crypto. 
 - 📫 How to reach me: Account Private after receiving a lot of "scam email".
 
 <!---
