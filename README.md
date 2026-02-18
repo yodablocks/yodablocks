@@ -4,7 +4,7 @@
 
 **⚙️ EVM Infrastructure**
 - [reth-usdc-indexer](https://github.com/yodablocks/reth-usdc-indexer) — Real-time USDC indexer inside Reth. Zero RPC calls, sub-10ms queries, reorg handling.
-- [defi-replay-kit](https://github.com/yodablocks/defi-replay-kit) — Replay historical DeFi transactions for testing and exploit reproduction.
+- [defi-replay-kit](https://github.com/yodablocks/defi-replay-kit) — Pre-packaged DeFi exploit datasets — offline, no RPC, SQL-queryable.
 - [yulsafe](https://github.com/yodablocks/yulsafe) — Gas-optimized ERC4626 vault for zkSync Era.
 
 **🛡️ Security & Intelligence**
