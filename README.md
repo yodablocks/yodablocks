@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=yodablocks&fontColor=ffffff&fontSize=70&desc=Data%20Engineering%20·%20Blockchain%20Infra%20·%20Security&descSize=20&descAlignY=68&animation=fadeIn" width="100%" alt="header"/>
+<img src="https://raw.githubusercontent.com/yodablocks/yodablocks/main/assets/banner.svg" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
 
 # Marc F.
 
