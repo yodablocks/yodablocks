@@ -1,8 +1,22 @@
-# Data Engineer · Blockchain Infrastructure · Security
+<div align="center">
 
-7+ years building production systems at the intersection of data engineering, DeFi protocol infrastructure, and applied security.
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=yodablocks&fontColor=ffffff&fontSize=70&desc=Data%20Engineering%20·%20Blockchain%20Infra%20·%20Security&descSize=20&descAlignY=68&animation=fadeIn" width="100%" alt="header"/>
 
-I design and ship data pipelines, on-chain indexers, forensic analytics engines, and security tooling. My work spans Web2 and Web3 stacks — Python, Rust, TypeScript, SQL — with deep protocol-level knowledge that most data engineers don't carry.
+# Marc F.
+
+**I build the indexers, forensic engines, and security tooling DeFi runs on.**
+
+7+ years shipping production systems at the intersection of data engineering, DeFi protocol infrastructure, and applied security.
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](#)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](#)
+[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)](#)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)](#)
+
+</div>
+
+I design and ship data pipelines, on-chain indexers, forensic analytics engines, and security tooling across Web2 and Web3 stacks — with the protocol-level depth most data engineers don't carry.
 
 ---
 
@@ -14,7 +28,7 @@ I design and ship data pipelines, on-chain indexers, forensic analytics engines,
 
 ## 🔐 Security tooling
 
-- **rsentinel** — Detection and hardening for AI/Claude agent infrastructure. Covers prompt injection, tool abuse, and session integrity.
+- **rsentinel** — Detection and hardening for AI/agent infrastructure. Covers prompt injection, tool abuse, and session integrity.
 - **CyberShield** — Threat detection platform for SMBs: three-tier email scanning pipeline (rule engine + ML + LLM fallback), browser extension for real-time DOM link analysis.
 - **cve-guard** — Node.js dependency vulnerability scanner with live CVE database integration.
 
@@ -26,13 +40,23 @@ I design and ship data pipelines, on-chain indexers, forensic analytics engines,
 
 ---
 
+<div align="center">
+
 | | |
 |---|---|
 | **Languages** | Python · Rust · TypeScript · SQL |
 | **Infra** | Reth · zkSync · BigQuery · Tailscale · Nginx |
 | **Protocols** | Aave · Morpho · Uniswap · ERC4626 · EIP-712 |
-| **Spoken languages** | French (native) · English · Mandarin |
+| **Spoken** | French (native) · English · Mandarin |
+
+</div>
 
 ---
 
-Based in Taipei &nbsp;·&nbsp; Open to senior data engineering and infrastructure roles (remote, Singapore, HK, Europe) &nbsp;·&nbsp; zkmarc@proton.me
+<div align="center">
+
+**Based in Taipei** &nbsp;·&nbsp; Open to senior data engineering & infrastructure roles (remote, Singapore, HK, Europe)
+
+[![Email](https://img.shields.io/badge/zkmarc@proton.me-8B89CC?style=flat&logo=protonmail&logoColor=white)](mailto:zkmarc@proton.me)
+
+</div>
