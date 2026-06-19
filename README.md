@@ -37,6 +37,8 @@
 
 - **grvt-sdk** — Python SDK for GRVT Exchange: REST, WebSocket, EIP-712 signing, low-latency order pipeline. 83 unit tests.
 - **VLTFI / RiskLens** — Forensic DeFi risk intelligence engine: cross-vault concentration mapping, protocol exposure analysis, institutional reporting.
+- **Quarq** — RAG-based research and report assistant: ingestion, retrieval, and LLM-driven report generation pipeline.
+- **cac40-portfolio-analyser** — Portfolio analysis tool for CAC40 equities.
 - **paradex-py** — Merged PR adding a `ThreadedWebSocketClient`, plus a sybil-detection build for Paradex's market.
 - **nansen-cli** — Two merged PRs extending Nansen's open-source CLI.
 - Dune Spellbook contributor · BigQuery datasets (Numia, P2P)
