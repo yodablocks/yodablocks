@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/yodablocks/yodablocks/main/assets/banner.svg" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
+<img src="https://raw.githubusercontent.com/yodablocks/yodablocks/main/banner.svg" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
 
 **I build the indexers, forensic engines, and security tooling DeFi runs on.**
 
