@@ -54,6 +54,6 @@
 
 ---
 
-**Based in Taipei** &nbsp;·&nbsp; Open to senior data engineering & infrastructure roles (remote, Singapore, HK, Europe)
+**Based in Taipei or EU** &nbsp;·&nbsp; Open to senior data engineering & infrastructure roles (remote, Singapore, HK, Europe)
 
 [![Email](https://img.shields.io/badge/zkmarc@proton.me-8B89CC?style=flat&logo=protonmail&logoColor=white)](mailto:zkmarc@proton.me)
