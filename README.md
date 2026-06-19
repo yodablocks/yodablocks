@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/yodablocks/yodablocks/main/banner.png" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
+<img src="./banner.png" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
 
 **I build the indexers, forensic engines, and security tooling DeFi runs on.**
 
@@ -17,18 +17,29 @@
 - **reth-usdc-indexer** — Real-time USDC indexer built on Reth. Zero RPC calls, sub-10ms queries, reorg handling.
 - **defi-replay-kit** — Pre-packaged DeFi exploit datasets, offline-queryable via SQL. Used for forensic research and protocol audits.
 - **yulsafe** — Gas-optimized ERC4626 vault for zkSync Era.
+- **perp-liquidity** — 8-venue cross-venue perp tool: orderbook, funding, OI, liquidations. 138 tests.
+- **depth-map** — Cross-venue L2 order book depth and cost-to-move across 5 venues, including custom Binance and OKX adapters.
 
 ## 🔐 Security tooling
 
-- **rsentinel** — Detection and hardening for AI/agent infrastructure. Covers prompt injection, tool abuse, and session integrity.
+- **rsentinel** — Shipped Rust CLI security scanner: SSL/TLS, HTTP header, and DNS checks, plus detection and hardening for AI/agent infrastructure (prompt injection, tool abuse, session integrity).
 - **CyberShield** — Threat detection platform for SMBs: three-tier email scanning pipeline (rule engine + ML + LLM fallback), browser extension for real-time DOM link analysis.
 - **cve-guard** — Node.js dependency vulnerability scanner with live CVE database integration.
+
+## 📡 Market data & signal infrastructure
+
+- **LiqNode** — Raspberry Pi liquidation data node for Hyperliquid. Infers liquidations via OI-delta on the `activeAssetCtx` feed (HL exposes no native liquidation flag), with a FastAPI backend serving live heatmaps.
+- **signal-pipeline** — Source-agnostic signal ingestion layer: trust tiers, MAD anomaly detection, multi-source aggregation. 44 tests.
+- **hip3-divergence** — Three-price divergence monitor for oracle-backed perps, tracking spot, oracle, and mark price drift in real time. 42 tests, running 24/7 on a Pi.
+- **cohort-pnl / cohort-dashboard** — Wallet cohort analytics by PNL tier across multiple assets, with per-wallet drill-down and exposure calculation.
 
 ## 📊 Data & analytics
 
 - **grvt-sdk** — Python SDK for GRVT Exchange: REST, WebSocket, EIP-712 signing, low-latency order pipeline. 83 unit tests.
 - **VLTFI / RiskLens** — Forensic DeFi risk intelligence engine: cross-vault concentration mapping, protocol exposure analysis, institutional reporting.
-- Dune Spellbook contributor · BigQuery datasets (Numia, P2P) · Paradex sybil detection
+- **paradex-py** — Merged PR adding a `ThreadedWebSocketClient`, plus a sybil-detection build for Paradex's market.
+- **nansen-cli** — Two merged PRs extending Nansen's open-source CLI.
+- Dune Spellbook contributor · BigQuery datasets (Numia, P2P)
 
 ---
 
