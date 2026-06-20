@@ -1,47 +1,46 @@
-<img src="./banner1.png" width="100%" alt="Marc F. — Data Engineering · AI Systems · Security"/>
+<img src="./assets/banner1.png" width="100%" alt="Marc F. — Data Engineering · AI Systems · Security"/>
 
-**I build the indexers, forensic engines, and security tooling DeFi runs on.**
+**I build real-time data pipelines, AI/LLM systems, and security tooling for high-stakes, high-throughput environments.**
 
-7+ years shipping production systems at the intersection of data engineering, DeFi protocol infrastructure, and applied security. I design and ship data pipelines, on-chain indexers, forensic analytics engines, and security tooling across Web2 and Web3 stacks — with the protocol-level depth most data engineers don't carry.
+7+ years shipping production systems across data engineering, applied ML/LLM infrastructure, and security — with deep experience in low-latency ingestion, multi-source data reconciliation, and systems that have to be right under load. Most of this was built for blockchain and market-data environments, which forced a level of correctness and latency discipline that's directly transferable to any data-intensive or AI system.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](#)
 [![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](#)
-[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)](#)
 [![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)](#)
+[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)](#)
 
 ---
 
-## ⚙️ Infrastructure & indexing
+## 🛠️ Data engineering & pipelines
 
-- **reth-usdc-indexer** — Real-time USDC indexer built on Reth. Zero RPC calls, sub-10ms queries, reorg handling.
-- **defi-replay-kit** — Pre-packaged DeFi exploit datasets, offline-queryable via SQL. Used for forensic research and protocol audits.
-- **yulsafe** — Gas-optimized ERC4626 vault for zkSync Era.
-- **perp-liquidity** — 8-venue cross-venue perp tool: orderbook, funding, OI, liquidations. 138 tests.
-- **depth-map** — Cross-venue L2 order book depth and cost-to-move across 5 venues, including custom Binance and OKX adapters.
+- **reth-usdc-indexer** — Real-time data indexer with zero external API calls, sub-10ms query latency, and automatic handling of out-of-order/conflicting events (reorg handling).
+- **perp-liquidity** — Multi-source data aggregation tool unifying 8 independent feeds (orderbook, funding, open interest, liquidations) into one consistent view. 138 tests.
+- **depth-map** — Cross-source data reconciliation engine computing depth and cost-to-move across 5 sources, including custom adapters for two exchanges with non-standard APIs.
+- **signal-pipeline** — Source-agnostic ingestion layer with trust-tier weighting and statistical anomaly detection (MAD-based outlier filtering). 44 tests.
+- **hip3-divergence** — Real-time divergence monitor reconciling three independent price sources, flagging drift as it happens. 42 tests, runs 24/7 unattended on a Raspberry Pi.
+- **defi-replay-kit** — Pre-packaged exploit/incident datasets, offline-queryable via SQL, used for forensic research and audits.
+- **yulsafe** — Gas-optimized vault contract (ERC4626) for zkSync Era.
 
-## 🔐 Security tooling
+## 🤖 AI / LLM systems
 
-- **rsentinel** — Shipped Rust CLI security scanner: SSL/TLS, HTTP header, and DNS checks, plus detection and hardening for AI/agent infrastructure (prompt injection, tool abuse, session integrity).
-- **CyberShield** — Threat detection platform for SMBs: three-tier email scanning pipeline (rule engine + ML + LLM fallback), browser extension for real-time DOM link analysis.
-- **cve-guard** — Node.js dependency vulnerability scanner with live CVE database integration.
+- **Quarq** — RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
+- **CyberShield** — Threat detection platform with a three-tier decision pipeline (rule engine → ML classifier → LLM fallback for ambiguous cases), plus a browser extension doing real-time DOM analysis.
+- **rsentinel** — Hardening and detection tooling for AI/agent infrastructure: prompt injection detection, tool-abuse monitoring, session integrity checks. Also a general-purpose Rust CLI security scanner (SSL/TLS, HTTP headers, DNS).
 
-## 📡 Market data & signal infrastructure
+## 🔐 Security engineering
 
-- **LiqNode** — Raspberry Pi liquidation data node for Hyperliquid. Infers liquidations via OI-delta on the `activeAssetCtx` feed (HL exposes no native liquidation flag), with a FastAPI backend serving live heatmaps.
-- **signal-pipeline** — Source-agnostic signal ingestion layer: trust tiers, MAD anomaly detection, multi-source aggregation. 44 tests.
-- **hip3-divergence** — Three-price divergence monitor for oracle-backed perps, tracking spot, oracle, and mark price drift in real time. 42 tests, running 24/7 on a Pi.
-- **cohort-pnl / cohort-dashboard** — Wallet cohort analytics by PNL tier across multiple assets, with per-wallet drill-down and exposure calculation.
+- **cve-guard** — Dependency vulnerability scanner with live CVE database integration.
+- **rsentinel** — *(see above)* — also functions as a standalone infra scanner.
+- Server hardening, VPN tunneling (WireGuard), and access-control audits on self-managed infrastructure.
 
-## 📊 Data & analytics
+## 📊 Analytics & SDKs
 
-- **grvt-sdk** — Python SDK for GRVT Exchange: REST, WebSocket, EIP-712 signing, low-latency order pipeline. 83 unit tests.
-- **VLTFI / RiskLens** — Forensic DeFi risk intelligence engine: cross-vault concentration mapping, protocol exposure analysis, institutional reporting.
-- **Quarq** — RAG-based research and report assistant: ingestion, retrieval, and LLM-driven report generation pipeline.
+- **VLTFI / RiskLens** — Risk intelligence engine: cross-source concentration mapping, exposure analysis, institutional-grade reporting.
 - **cac40-portfolio-analyser** — Portfolio analysis tool for CAC40 equities.
-- **paradex-py** — Merged PR adding a `ThreadedWebSocketClient`, plus a sybil-detection build for Paradex's market.
-- **nansen-cli** — Two merged PRs extending Nansen's open-source CLI.
-- Dune Spellbook contributor · BigQuery datasets (Numia, P2P)
+- **grvt-sdk** — Python SDK for an exchange API: REST, WebSocket, cryptographic request signing, low-latency order pipeline. 83 unit tests.
+- **cohort-pnl / cohort-dashboard** — Cohort analytics by performance tier, with per-entity drill-down.
+- Merged open-source contributions: threaded WebSocket client for an exchange SDK ([paradex-py](#)), two merged PRs on a public analytics CLI ([nansen-cli](#)), Dune Spellbook contributor.
 
 ---
 
@@ -49,11 +48,11 @@
 |---|---|
 | **Languages** | Python · Rust · TypeScript · SQL |
 | **Infra** | Reth · zkSync · BigQuery · Tailscale · Nginx |
-| **Protocols** | Aave · Morpho · Uniswap · ERC4626 · EIP-712 |
+| **Domains applied in** | Blockchain data & DeFi protocols, market microstructure, security tooling |
 | **Spoken** | French (native) · English · Mandarin |
 
 ---
 
-**Based in Taipei or EU** &nbsp;·&nbsp; Open to senior data engineering & infrastructure roles (remote, Singapore, HK, Europe)
+**Based in Taipei** &nbsp;·&nbsp; Open to Data Engineering & AI Engineering roles (remote, Singapore, HK, Europe)
 
 [![Email](https://img.shields.io/badge/zkmarc@proton.me-8B89CC?style=flat&logo=protonmail&logoColor=white)](mailto:zkmarc@proton.me)
