@@ -1,4 +1,4 @@
-<img src="./assets/banner1.png" width="100%" alt="Marc F. — Data Engineering · AI Systems · Security"/>
+<img src="./banner1.png" width="100%" alt="Marc F. — Data Engineering · AI Systems · Security"/>
 
 **I build real-time data pipelines, AI/LLM systems, and security tooling for high-stakes, high-throughput environments.**
 
