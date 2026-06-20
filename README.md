@@ -1,4 +1,4 @@
-<img src="./banner.png" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
+<img src="./banner1.png" width="100%" alt="Marc F. — Data Engineering · Blockchain Infrastructure · Security"/>
 
 **I build the indexers, forensic engines, and security tooling DeFi runs on.**
 
