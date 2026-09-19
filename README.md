@@ -24,6 +24,8 @@
 
 ## 🤖 AI / LLM systems
 
+- **jev-orderby-bench** — Independent calibration and ranking benchmark of a commercial AI model (TypeSafe's Jev): Brier scores, invariant checks, and a graded-relevance probe the model fails four of six times. Vendor claims measured, not assumed.
+- **duckdb-jev** — Semantic `ORDER BY` for DuckDB backed by that model, shipped with its own calibration numbers.
 - **Quarq** — RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
 - **CyberShield** — Threat detection platform with a three-tier decision pipeline (rule engine → ML classifier → LLM fallback for ambiguous cases), plus a browser extension doing real-time DOM analysis.
 - **rsentinel** — Hardening and detection tooling for AI/agent infrastructure: prompt injection detection, tool-abuse monitoring, session integrity checks. Also a general-purpose Rust CLI security scanner (SSL/TLS, HTTP headers, DNS).
@@ -40,7 +42,7 @@
 - **cac40-portfolio-analyser** — Portfolio analysis tool for CAC40 equities.
 - **grvt-sdk** — Python SDK for an exchange API: REST, WebSocket, cryptographic request signing, low-latency order pipeline. 83 unit tests.
 - **cohort-pnl / cohort-dashboard** — Cohort analytics by performance tier, with per-entity drill-down.
-- Merged open-source contributions: threaded WebSocket client for an exchange SDK ([paradex-py](#)), two merged PRs on a public analytics CLI ([nansen-cli](#)), Dune Spellbook contributor.
+- Open-source contributions: packaging fix merged into a public analytics CLI ([nansen-cli #294](https://github.com/nansen-ai/nansen-cli/pull/294)); [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) added to three curated TypeSafe/Jev indexes via merged PRs; threaded WebSocket client submitted to an exchange SDK ([paradex-py #121](https://github.com/tradeparadex/paradex-py/pull/121)).
 
 ---
 
