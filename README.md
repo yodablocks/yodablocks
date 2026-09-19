@@ -40,7 +40,7 @@
 - **cac40-portfolio-analyser** — Portfolio analysis tool for CAC40 equities.
 - **grvt-sdk** — Python SDK for an exchange API: REST, WebSocket, cryptographic request signing, low-latency order pipeline. 83 unit tests.
 - **cohort-pnl / cohort-dashboard** — Cohort analytics by performance tier, with per-entity drill-down.
-- Merged open-source contributions: threaded WebSocket client for an exchange SDK ([paradex-py](#)), two merged PRs on a public analytics CLI ([nansen-cli](#)), Dune Spellbook contributor.
+- Open-source contributions: packaging fix merged into a public analytics CLI ([nansen-cli #294](https://github.com/nansen-ai/nansen-cli/pull/294)); [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) added to three curated TypeSafe/Jev indexes via merged PRs; threaded WebSocket client submitted to an exchange SDK ([paradex-py #121](https://github.com/tradeparadex/paradex-py/pull/121)).
 
 ---
 
