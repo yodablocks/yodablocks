@@ -27,12 +27,12 @@
 - **jev-orderby-bench** — Independent calibration and ranking benchmark of a commercial AI model (TypeSafe's Jev): Brier scores, invariant checks, and a graded-relevance probe the model fails four of six times. Vendor claims measured, not assumed.
 - **duckdb-jev** — Semantic `ORDER BY` for DuckDB backed by that model, shipped with its own calibration numbers.
 - **Quarq** — RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
-- **CyberShield** — Threat detection platform with a three-tier decision pipeline (rule engine → ML classifier → LLM fallback for ambiguous cases), plus a browser extension doing real-time DOM analysis.
+- **CyberShield** — *(early stage)* Multi-tenant threat-detection platform: FastAPI service, Postgres schema and Alembic migrations in place. Detection pipeline is designed, not yet implemented.
 - **rsentinel** — Defensive posture scanner in Rust: TLS, HTTP headers, DNS (SPF/DMARC/DKIM/DNSSEC), CORS and exposure checks behind one CLI. CVSS-derived severity, SARIF 2.1.0 output for GitHub code scanning, 161 tests. [Public repo →](https://github.com/yodablocks/rsentinel-public)
 
 ## 🔐 Security engineering
 
-- **cve-guard** — Dependency vulnerability scanner with live CVE database integration.
+- **cve-guard** — Dependency vulnerability scanner for Node.js projects: live OSV.dev and NVD lookups, monorepo-aware scanning, AI-generated fix PRs, Slack alerts and PDF/CSV reporting. Next.js, 24 API routes, ~12k lines.
 - **rsentinel** — *(see above)* — eight scanner modules, machine-readable output, runs unauthenticated from an external perspective.
 - Server hardening, VPN tunneling (WireGuard), and access-control audits on self-managed infrastructure.
 
