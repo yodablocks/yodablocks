@@ -28,12 +28,12 @@
 - **duckdb-jev** — Semantic `ORDER BY` for DuckDB backed by that model, shipped with its own calibration numbers.
 - **Quarq** — RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
 - **CyberShield** — Threat detection platform with a three-tier decision pipeline (rule engine → ML classifier → LLM fallback for ambiguous cases), plus a browser extension doing real-time DOM analysis.
-- **rsentinel** — Hardening and detection tooling for AI/agent infrastructure: prompt injection detection, tool-abuse monitoring, session integrity checks. Also a general-purpose Rust CLI security scanner (SSL/TLS, HTTP headers, DNS).
+- **rsentinel** — Defensive posture scanner in Rust: TLS, HTTP headers, DNS (SPF/DMARC/DKIM/DNSSEC), CORS and exposure checks behind one CLI. CVSS-derived severity, SARIF 2.1.0 output for GitHub code scanning, 161 tests. [Public repo →](https://github.com/yodablocks/rsentinel-public)
 
 ## 🔐 Security engineering
 
 - **cve-guard** — Dependency vulnerability scanner with live CVE database integration.
-- **rsentinel** — *(see above)* — also functions as a standalone infra scanner.
+- **rsentinel** — *(see above)* — eight scanner modules, machine-readable output, runs unauthenticated from an external perspective.
 - Server hardening, VPN tunneling (WireGuard), and access-control audits on self-managed infrastructure.
 
 ## 📊 Analytics & SDKs
