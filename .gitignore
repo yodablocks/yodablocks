@@ -1,0 +1,4 @@
+# commitjev writes its response cache into whatever repo it checks.
+.commitjev/
+
+.DS_Store
