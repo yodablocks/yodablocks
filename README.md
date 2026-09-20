@@ -24,7 +24,12 @@
 
 ## 🤖 AI / LLM systems
 
-- **jev-orderby-bench** — Independent calibration and ranking benchmark of a commercial AI model (TypeSafe's Jev): Brier scores, invariant checks, and a graded-relevance probe the model fails four of six times. Vendor claims measured, not assumed.
+**Four public repos on TypeSafe's Jev**, a decision model released 14 Sep 2026. They cross-reference each other, and each one publishes what it gets wrong:
+
+- **[jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench)** — Independent calibration and ranking benchmark: pre-registered gates, Brier and ECE, invariant checks, and a graded-relevance probe the model fails four of six times. It also measured that batching 40 rows per request fails the ranking gate that one row per request passes, which then decided the architecture of two repos below. Vendor claims measured, not assumed.
+- **[commitjev](https://github.com/yodablocks/commitjev)** — Reviews a commit before a human does: whether the message matches the diff, whether the edits belong together, what the message leaves out. Eight Nouls and a Choice in one request, every threshold owned by code. Ships a calibration harness of labelled defects that reports its own margins, false alarms and run-to-run variance. 27 tests. Running it on its own history found four bugs in it, including a rule that scored *below chance*, all documented in the README rather than quietly fixed.
+- **[jevq](https://github.com/yodablocks/jevq)** — Static linter for the questions you ask a decision model: nine rules encoding the vendor's own documented failure modes, no API call, runs in 0.03s. Four projects in that ecosystem are linters *powered by* Jev; none checked the questions themselves. It catches the below-chance bug above instantly. 21 tests.
+- **[jobbyjev](https://github.com/yodablocks/jobbyjev)** — Ranks companies by interview likelihood for one resume. States plainly which direction it must not be run in and why, and ships its dataset's provenance inside the data file rather than only in the README.
 - **duckdb-jev** — Semantic `ORDER BY` for DuckDB backed by that model, shipped with its own calibration numbers.
 - **Quarq** — RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
 - **CyberShield** — *(early stage)* Multi-tenant threat-detection platform: FastAPI service, Postgres schema and Alembic migrations in place. Detection pipeline is designed, not yet implemented.
@@ -42,7 +47,7 @@
 - **cac40-portfolio-analyser** — Portfolio analysis tool for CAC40 equities.
 - **grvt-sdk** — Python SDK for an exchange API: REST, WebSocket, cryptographic request signing, low-latency order pipeline. 83 unit tests.
 - **cohort-pnl / cohort-dashboard** — Cohort analytics by performance tier, with per-entity drill-down.
-- Open-source contributions: packaging fix merged into a public analytics CLI ([nansen-cli #294](https://github.com/nansen-ai/nansen-cli/pull/294)); [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) added to three curated TypeSafe/Jev indexes via merged PRs; threaded WebSocket client submitted to an exchange SDK ([paradex-py #121](https://github.com/tradeparadex/paradex-py/pull/121)).
+- Open-source contributions: packaging fix merged into a public analytics CLI ([nansen-cli #294](https://github.com/nansen-ai/nansen-cli/pull/294)); [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) added to three curated TypeSafe/Jev indexes via merged PRs, and four repos published into that ecosystem in its first week; threaded WebSocket client submitted to an exchange SDK ([paradex-py #121](https://github.com/tradeparadex/paradex-py/pull/121)).
 
 ---
 
