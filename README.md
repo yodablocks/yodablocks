@@ -12,6 +12,10 @@
 
 ---
 
+## ⚙️ Backend & workflow engines
+
+- **[keel](https://github.com/yodablocks/keel)**. Durable execution engine for AI agents, in TypeScript on Postgres: steps that survive a `SIGKILL` mid-run, retries driven by *why* a step failed, per-run and per-tenant budgets that defer runs instead of failing them, and human approval as a first-class step. Jev classifies failures from their messages (29/30 against 14/30 for status-code rules, on a synthetic set the README calls too easy). Its own benchmark found its bottleneck, a hot spend row, fixed by sharding: ~2,000 runs/s at 32 workers. Zero-dependency dashboard, serverless mode, 95 tests.
+
 ## 🛠️ Data engineering & pipelines
 
 - **reth-usdc-indexer**. Real-time indexer running *inside* the node as an execution extension: zero external API calls, ~2 µs mean balance lookups (p99 under 3 µs, benchmark included), and exact rollback on out-of-order/conflicting events (reorg handling). [Public version with reproducible benchmark →](https://github.com/yodablocks/reth-usdc-indexer-public)
@@ -30,6 +34,7 @@
 - **[commitjev](https://github.com/yodablocks/commitjev)**. Reviews a commit before a human does: whether the message matches the diff, whether the edits belong together, what the message leaves out. Eight Nouls and a Choice in one request, every threshold owned by code. Ships a calibration harness of labelled defects that reports its own margins, false alarms and run-to-run variance. 27 tests. Running it on its own history found four bugs in it, including a rule that scored *below chance*, all documented in the README rather than quietly fixed.
 - **[jevq](https://github.com/yodablocks/jevq)**. Static linter for the questions you ask a decision model: nine rules encoding the vendor's own documented failure modes, no API call, runs in 0.03s. Four projects in that ecosystem are linters *powered by* Jev; none checked the questions themselves. It catches the below-chance bug above instantly. 21 tests.
 - **[jobbyjev](https://github.com/yodablocks/jobbyjev)**. Ranks companies by interview likelihood for one resume. States plainly which direction it must not be run in and why, and ships its dataset's provenance inside the data file rather than only in the README.
+- **[keel](https://github.com/yodablocks/keel)** *(see above)*. Uses Jev as the failure classifier behind its retry policy, with a rule-based fallback when Jev is unsure or unavailable.
 - **duckdb-jev**. Semantic `ORDER BY` for DuckDB backed by that model, shipped with its own calibration numbers.
 - **Quarq**. RAG-based research and report assistant: document ingestion, retrieval, and LLM-driven report generation pipeline.
 - **CyberShield**. *(early stage)* Multi-tenant threat-detection platform: FastAPI service, Postgres schema and Alembic migrations in place. Detection pipeline is designed, not yet implemented.
@@ -54,12 +59,12 @@
 | | |
 |---|---|
 | **Languages** | Python · Rust · TypeScript · SQL |
-| **Infra** | Reth · zkSync · BigQuery · Tailscale · Nginx |
+| **Infra** | Postgres · Docker · GitHub Actions · Reth · zkSync · BigQuery · Tailscale · Nginx |
 | **Domains applied in** | Blockchain data & DeFi protocols, market microstructure, security tooling |
 | **Spoken** | French (native) · English · Mandarin |
 
 ---
 
-**Based in Taipei** &nbsp;·&nbsp; Open to Data Engineering & AI Engineering roles (remote, Singapore, HK, Europe)
+**Based in Taipei** &nbsp;·&nbsp; Open to Backend, Data Engineering & AI Engineering roles (remote, Singapore, HK, Europe)
 
 [![Email](https://img.shields.io/badge/zkmarc@proton.me-8B89CC?style=flat&logo=protonmail&logoColor=white)](mailto:zkmarc@proton.me)
