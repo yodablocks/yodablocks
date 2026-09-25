@@ -1,8 +1,16 @@
 <img src="./banner1.png" width="100%" alt="Marc F. · Data Engineering · AI Systems · Security"/>
 
-**Data engineering, AI/LLM systems and security tooling, built to be right under load.**
+**I build real-time data pipelines, AI/LLM systems, and security tooling for high-stakes, high-throughput environments.**
 
-7+ years shipping production systems. Based in Taipei, open to Backend, Data and AI Engineering roles (remote, Singapore, HK, Europe).
+7+ years shipping production systems across data engineering, applied ML/LLM infrastructure, and security, with deep experience in low-latency ingestion, multi-source data reconciliation, and systems that have to be right under load. Most of this was built for blockchain and market-data environments, which forced a level of correctness and latency discipline that's directly transferable to any data-intensive or AI system.
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](#)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](#)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)](#)
+[![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)](#)
+
+---
 
 ## Highlights
 
@@ -45,4 +53,15 @@
 
 ---
 
-Python · Rust · TypeScript · SQL · Postgres · Docker &nbsp;|&nbsp; French (native) · English · Mandarin &nbsp;|&nbsp; [zkmarc@proton.me](mailto:zkmarc@proton.me)
+| | |
+|---|---|
+| **Languages** | Python · Rust · TypeScript · SQL |
+| **Infra** | Postgres · Docker · GitHub Actions · Reth · zkSync · BigQuery · Tailscale · Nginx |
+| **Domains applied in** | Blockchain data & DeFi protocols, market microstructure, security tooling |
+| **Spoken** | French (native) · English · Mandarin |
+
+---
+
+**Based in Taipei** &nbsp;·&nbsp; Open to Backend, Data Engineering & AI Engineering roles (remote, Singapore, HK, Europe)
+
+[![Email](https://img.shields.io/badge/zkmarc@proton.me-8B89CC?style=flat&logo=protonmail&logoColor=white)](mailto:zkmarc@proton.me)
