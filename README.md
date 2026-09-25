@@ -14,7 +14,7 @@
 
 ## Highlights
 
-- 📈 [quarq](https://github.com/yodablocks/quarq) - Cited research over ECB, Banque de France and AMF documents: the right page in the top 5 for 35 of 38 reviewed questions
+- 📈 [quarq](https://github.com/yodablocks/quarq) - Cited research over ECB, Banque de France and AMF documents: the right page ranked first for 33 of 38 reviewed questions
 - ⚓ [keel](https://github.com/yodablocks/keel) - Durable execution engine for AI agents: steps that survive a crash, budgets, human approval
 - 📏 [jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) - Independent benchmark of a decision model, publishing what it gets wrong
 
