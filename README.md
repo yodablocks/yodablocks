@@ -61,6 +61,7 @@
 | **Spoken** | French (native) · English · Mandarin |
 
 ---
+**Code:** T3V74GAR
 
 **Based in Taipei** &nbsp;·&nbsp; Open to Backend, Data Engineering & AI Engineering roles (remote, Singapore, HK, Europe)
 
