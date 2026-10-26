@@ -49,7 +49,7 @@
 ## Open Source
 
 - [nansen-cli #294](https://github.com/nansen-ai/nansen-cli/pull/294) - Packaging fix (merged)
-- [awesome-jev](https://github.com/yodablocks/awesome-jev) - Curated index of the Jev ecosystem
+- [awesome-jev #27](https://github.com/yibie/awesome-jev/pull/27) - jev-orderby-bench listed in community awesome lists (merged)
 
 ---
 
